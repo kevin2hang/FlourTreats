@@ -73,7 +73,7 @@ public class DataLoader {
         return recipes.get(indexOfClosestRecipe).getName();
     }
 
-    public ArrayList<Recipe> getKNearestNeighborRecipe(Recipe unknown) {
+    public ArrayList<Recipe> getKNearestNeighborRecipes(Recipe unknown) {
         ArrayList<Recipe> kNearestRecipes = new ArrayList<>();
         kNearestRecipes.add(recipes.get(0));
 
