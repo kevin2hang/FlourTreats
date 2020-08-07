@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFE2BB"
+    tools:context=".SearchRecipesFragment">
+
+    <EditText
+        android:id="@+id/recipeNameEditTxt"
+        android:layout_width="331dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Type a baked good you want to make."
+        android:inputType="textPersonName"
+        android:textColorHighlight="#B7EDF4"
+        android:textColorLink="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/findARecipeBtn"
+        android:layout_width="155dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="36dp"
+        android:background="#EFE270"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Find a Recipe!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#734d26"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipeNameEditTxt" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/resetBtn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/findARecipeBtn"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/displayTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:autoLink="all"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/resetBtn2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/findARecipeBtn"
+            app:layout_constraintVertical_bias="0.213" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/resetBtn2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:background="#EFE270"
+        android:gravity="center"
+        android:text="Clear All"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#734d26"
+        android:textColorHighlight="#F44336"
+        android:textColorLink="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
