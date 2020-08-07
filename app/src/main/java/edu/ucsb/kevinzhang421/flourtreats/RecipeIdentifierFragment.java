@@ -60,7 +60,6 @@ public class RecipeIdentifierFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_recipe_identifier, container, false);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     public void onStart() {
         super.onStart();
         final DataLoader dataLoader = new DataLoader(3);
