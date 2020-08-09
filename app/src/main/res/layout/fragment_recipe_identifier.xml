@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background = "#EFE2BB"
+    android:background="#EFE2BB"
     tools:context=".RecipeIdentifierFragment">
 
     <EditText
@@ -12,7 +12,8 @@
         android:layout_width="406dp"
         android:layout_height="58dp"
         android:ems="10"
-        android:hint="Type in a recipe, separating ingredients with commas"
+        android:gravity="center"
+        android:hint="Type all ingredients, separated with commas"
         android:inputType="textPersonName"
         android:lines="5"
         android:textColorHighlight="#B7EDF4"
