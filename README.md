@@ -5,8 +5,10 @@
 - Implements fragments to create tabs
 - Parses data from a csv file
 - Uses K-nearest neighbor algorithm to classify the list of ingredients
-![Image of Recipe Identifier Tab](IdentifyRecipeDemo.jpg)
+
+<img align="center" width="100" alt="Image of Recipe Identifier Tab" src="IdentifyRecipeDemo.jpg">
 
 ### Find a Recipe
 - Search Bar to find a recipe for any baking good one would want to make
-![Image of Recipe Identifier Tab](FindARecipeDemo.jpg)
+
+<img align="center" width="100" alt="Image of Search Recipes Tab" src="FindARecipeDemo.jpg">
