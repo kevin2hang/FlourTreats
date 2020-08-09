@@ -9,6 +9,7 @@
 <p align ="center>
   <img width="200" alt="Image of Recipe Identifier Tab" src="IdentifyRecipeDemo.jpg">
 </p>
+
 ### Find a Recipe
 - Search Bar to find a recipe for any baking good one would want to make
                                                                                     
