@@ -9,5 +9,5 @@
 ### Find a Recipe
 - Search Bar to find a recipe for any baking good one would want to make
 
-  <img align="left" width="350" border="20" alt="Image of Recipe Identifier Tab" src="IdentifyRecipeDemo.jpg">
-  <img align ="left" width="350" border="20" alt="Image of Search Recipes Tab" src="FindARecipeDemo.jpg">
+<kbd><img align="left" width="350" alt="Image of Recipe Identifier Tab" src="IdentifyRecipeDemo.jpg"></kbd>
+  <kbd><img align ="left" width="350" alt="Image of Search Recipes Tab" src="FindARecipeDemo.jpg"></kbd>
