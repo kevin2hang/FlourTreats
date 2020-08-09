@@ -23,8 +23,8 @@
 
     <Button
         android:id="@+id/findARecipeBtn"
-        android:layout_width="155dp"
-        android:layout_height="56dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:background="#EFE270"
         android:gravity="center"
