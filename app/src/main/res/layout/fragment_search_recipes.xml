@@ -9,11 +9,12 @@
 
     <EditText
         android:id="@+id/recipeNameEditTxt"
-        android:layout_width="331dp"
-        android:layout_height="51dp"
+        android:layout_width="408dp"
+        android:layout_height="40dp"
         android:layout_marginTop="32dp"
         android:ems="10"
-        android:hint="Type a baked good you want to make."
+        android:gravity="center"
+        android:hint="Type the name of a baked good you want to make"
         android:inputType="textPersonName"
         android:textColorHighlight="#B7EDF4"
         android:textColorLink="#000000"
