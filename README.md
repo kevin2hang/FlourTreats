@@ -6,13 +6,13 @@
 - Parses data from a csv file
 - Uses K-nearest neighbor algorithm to classify the list of ingredients
 
-<p align ="center>
+<p align ="center">
   <img width="200" alt="Image of Recipe Identifier Tab" src="IdentifyRecipeDemo.jpg">
 </p>
 
 ### Find a Recipe
 - Search Bar to find a recipe for any baking good one would want to make
                                                                                     
-<p align ="center"
+<p align ="center">
   <img width="200" alt="Image of Search Recipes Tab" src="FindARecipeDemo.jpg">
 </p>
