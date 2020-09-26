@@ -241,27 +241,24 @@ public class Ingredient {
                         }
                     }
                     double number = Double.parseDouble(previousPhrase);
+
                     if (Conversions.getUnitOfMeasure(currentPhrase).equals("gram") || Conversions.getUnitOfMeasure(currentPhrase).equals(" g ")) {
                         grams += number;
-                        gramsNeedsToBeSet =false;
-                    }
-                    if (!Conversions.getUnitOfMeasure(currentPhrase).equals("null")) {
+                        gramsNeedsToBeSet = false;
+                    } else if (Conversions.getUnitOfMeasure(currentPhrase).equals("lb") || Conversions.getUnitOfMeasure(currentPhrase).equals("pound")) {
+                        grams += Conversions.convertPoundsToGrams(number);
+                        gramsNeedsToBeSet = false;
+                    } else if (Conversions.getUnitOfMeasure(currentPhrase).equals("oz") || Conversions.getUnitOfMeasure(currentPhrase).equals("ounce")) {
+                        grams += Conversions.convertOuncesToGrams(number);
+                        gramsNeedsToBeSet = false;
+                    }  else if (!Conversions.getUnitOfMeasure(currentPhrase).equals("null")) {
                         if (Conversions.getGramsPerCupFor(ingredient) != -1) {
                             grams += number * Conversions.convertToCups(Conversions.getUnitOfMeasure(currentPhrase)) * Conversions.getGramsPerCupFor(ingredient);
-                            gramsNeedsToBeSet =false;
+                            gramsNeedsToBeSet = false;
                         }
-                    }
-                    if (Conversions.getUnitOfMeasure(currentPhrase).equals("oz") || Conversions.getUnitOfMeasure(currentPhrase).equals("ounces")) {
-                        grams += Conversions.convertOuncesToGrams(number);
-                        gramsNeedsToBeSet =false;
-                    }
-                    if (Conversions.getUnitOfMeasure(currentPhrase).equals("lb") || Conversions.getUnitOfMeasure(currentPhrase).equals("pound")) {
-                        grams += Conversions.convertPoundsToGrams(number);
-                        gramsNeedsToBeSet =false;
-                    }
-                    if (Conversions.isQuantityIngredient(ingredient) && !Conversions.getIngredientName(currentPhrase).equals("null")) {
+                    } else if (Conversions.isQuantityIngredient(ingredient) && !Conversions.getIngredientName(currentPhrase).equals("null")) {
                         grams += Conversions.getGramsPer(ingredient) * number;
-                        gramsNeedsToBeSet =false;
+                        gramsNeedsToBeSet = false;
                     }
                 }
 
